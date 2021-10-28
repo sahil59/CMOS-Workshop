@@ -4,11 +4,11 @@ Day 1
   
 Day one we got to know about the basic meaning of the words “Circuit design” and “SPICE simulation” how to interpret or analyze the graph to get the knowledge about the specific components delay time. Also, some questions were answered like: 
         
-	Why do we need SPICE? 
-	How we can draw delay table with the help of delay table?
-	Where does the delay of a cell comes from?
-	Are the models accurate?
-	How do we verify, if what we are doing in static timing analysis are right or not?
+Why do we need SPICE? 
+How we can draw delay table with the help of delay table?
+Where does the delay of a cell comes from?
+Are the models accurate?
+How do we verify, if what we are doing in static timing analysis are right or not?
 
 
 
