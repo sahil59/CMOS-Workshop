@@ -26,8 +26,8 @@ How do we verify, if what we are doing in static timing analysis are right or no
 1.1.1 Basics about NMOS, Threshold voltage.
 
 There are two types of MOS: 
-> N-channel MOS
-> P-channel MOS
+N-channel MOS
+P-channel MOS
 
 In this part of the course, we learnt about the structure of N-channel metal-oxide semiconductor (NMOS) which is built on a p type substrate, its structure is as follows: -
 
