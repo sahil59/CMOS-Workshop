@@ -1,6 +1,10 @@
 Day 1
 
 1.1.0 Circuit design and Spice simulations
+![image](https://user-images.githubusercontent.com/84899907/139198063-3df5f69e-0b57-48eb-b644-af9898bcce2d.png)
+![image](https://user-images.githubusercontent.com/84899907/139198091-879cad9e-fef0-4b2c-a8db-f55616d8fb99.png)
+
+
   
 Day one we got to know about the basic meaning of the words “Circuit design” and “SPICE simulation” how to interpret or analyze the graph to get the knowledge about the specific components delay time. Also, some questions were answered like: 
         
