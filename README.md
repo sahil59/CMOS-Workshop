@@ -1,4 +1,4 @@
-# Day 1
+## Day 1
 
 ### **_1.1.0 Circuit design and Spice simulations_**
 
@@ -7,51 +7,51 @@
 
 Day one we got to know about the basic meaning of the words “Circuit design” and “SPICE simulation” how to interpret or analyze the graph to get the knowledge about the specific components delay time. Also, some questions were answered like: 
         
-Why do we need SPICE?
+* Why do we need SPICE?
+* How we can draw delay table with the help of delay table?
+* Where does the delay of a cell comes from?
+* Are the models accurate?
+* How do we verify, if what we are doing in static timing analysis are right or not?
 
-How we can draw delay table with the help of delay table?
+### **_1.1.1 Basics about NMOS, Threshold voltage_**
 
-Where does the delay of a cell comes from?
+There are two types of MOS:
 
-Are the models accurate?
+   * N-channel MOS
+   * P-channel MOS
 
-How do we verify, if what we are doing in static timing analysis are right or not?
+In this part we got to know about the structure of N-channel metal-oxide semiconductor (NMOS) which is built on a p type substrate, its structure is as follows: -
 
-1.1.1 Basics about NMOS, Threshold voltage.
+ ![image](https://user-images.githubusercontent.com/84899907/139267706-a89cbd78-3648-467d-8613-701ef126a994.png)
 
-There are two types of MOS: 
-N-channel MOS
-P-channel MOS
+Where,
 
-In this part of the course, we learnt about the structure of N-channel metal-oxide semiconductor (NMOS) which is built on a p type substrate, its structure is as follows: -
-
- 
-
-Where, G is gate
-             S is source
-             D is drain
-             B is body
+   G is gate\
+   S is source\
+   D is drain\
+   B is body
 
 NMOS is a 4 terminal (gate, source, drain and body) device which consists of p-substrate having an isolation region made up of SiO2 (Silicon dioxide) which helps to keep the two transistors independent from each other if they are kept close to each other. It also has n+ diffusion region where we have a space between them to place gate oxide over which Poly-si or metal gate is placed.
 
 Also, in the same video we learnt about the threshold voltage (Vt). 
 Then we took a case where voltage across the gate and source is 0 i.e., Vgs = 0. Where drain source and body are connected to the ground. Here we have two junctions; substrate-source (B-S) and substrate-drain (B-D) in the form of p-n junction diode. Both are off since no voltage is applied. S-D resistance is high because they are grounded. If we apply Vgs voltage to gate positive charges move towards the p-substrate leaving behind the negative charges.
 
-	Continuation of the threshold voltage
+### **_1.1.2 Continuation of the threshold voltage_**
 
    So, if we increase the gate voltage, depletion layer increases causing a phenomenon called Strong inversion where the semi-conductor surface inverts to n – type material. The Vgs voltage at which strong inversion occurs is called Threshold Voltage (Vt). And with the further increase of gate voltage, it will start attracting the heavily dopped area of negative charges from the source terminal side or the drain side. There will be no change in the depletion layer width since it has already been depleted but there will be increase in the channel width.
 
 
 
 
-Now if we take two scenarios in the above condition 
-Case 1: When Vsb = 0 
-No more depletion takes place.
+Now if we take two scenarios in the above condition <br  />
+Case 1: When Vsb = 0 <br  />
+No more depletion takes place.<br  />
 
-Case 2: When Vsb = positive value
-Additional depletion occurs between the source and abstract.
 
-1.1.3 Continuation of the two scenarios
+Case 2: When Vsb = positive value<br  />
+Additional depletion occurs between the source and abstract.<br  />
+
+### **_1.1.3 Continuation of the two scenarios_**
 
 In second case due to positive voltage few charges from the channel are pulled towards the source terminal. Due to this still there is no inversion observed but in the first case still there is depletion as semi-conductor surface inverts to n-type material at voltage Vgs = Vto. Semi-conductor surface in second case inverts to n-type material at voltage Vgs = Vto + V1.
 
@@ -59,10 +59,13 @@ From the above cases we can conclude that in the presence of substrate bias Vsb,
 
 Threshold voltage Equation: 
 
-Vt = v_(t_0 )+γ(√(|-2ϕ_f+v_sb | )-√(|-2ϕ_f | ))
-Where, Vto = Threshold voltage at Vsb = 0 which is a function        of manufacturing process
-                γ = Body effect coefficient, expresses the impact of changes in the body bis Vsb (〖unit is V〗^0.5)
-               ϕ_f = Fermi potential 
+![image](https://user-images.githubusercontent.com/84899907/139279729-59f7643e-e33d-4b4b-90c2-165a832ce510.png)
+
+Where, 
+
+Vto = Threshold voltage at Vsb = 0 which is a function of manufacturing process<br  />
+γ = Body effect coefficient, expresses the impact of changes in the body bis Vsb (unit is V<sup> 0.5</sup>)<br  />
+ϕ<sub>f</sub> = Fermi potential 
 
 Body effect formula: 
 γ=  √(2qNAε_Si )/C_OX 
