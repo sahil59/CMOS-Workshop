@@ -135,57 +135,130 @@ velocity of charge carrier (V<sub>n</sub>) = Mobility * electric field = μn * �
 
 We get,
 
-Id = μn* ⅆv⁄ⅆx * [C_OX  -([V_gs-V(x)]-V_t)]*W
-Id * dx = μn * dv * [C<sub>OX</sub>-([V_gs-V(x)]-V_t)]*W
+![image](https://user-images.githubusercontent.com/84899907/139434105-3d343c5a-fbd2-427b-945d-a50be0565337.png)
+
 Integrating over the length ‘L’ on LHS and over drain-source voltage Vds on RHS, we get the below equation:
 
-Id = μn.C_OX.(W⁄L)[(Vgs-Vt)Vds-〖Vds〗^2/2]
-Id = kn'.(W⁄L)[(Vgs-Vt)Vds-〖Vds〗^2/2]
-Where, kn'= process transconductance
-Id = kn.[(Vgs-Vt)Vds-〖Vds〗^2/2]
-Where, kn = kn'.(W⁄L) = gain factor
+![image](https://user-images.githubusercontent.com/84899907/139434271-2f345306-f39b-4e27-9235-910ef1706fe4.png)
+
+Where,<br/>
+
+kn'= process transconductance
+
+![image](https://user-images.githubusercontent.com/84899907/139434567-a3c68349-8ce1-47c1-8ad6-5aa170a5db56.png)
+
+Where,<br/>
+
+kn = kn'.(W⁄L) = gain factor
+
 Now if we substitute the assumed values in the above equations, which are
-Vgs = 1V
-Vds = 0.05V
-Vt = 0.45V
+
+V<sub>gs</sub> = 1V<br/>
+V<sub>ds</sub> = 0.05V<br/>
+V<sub>t</sub> = 0.45V<br/>
+
 We will get,
-Id = kn .[0.0275-0.00125]
-Since the last term is similar to 0
-∴Id=kn.0.0275→Linear or resistive region of operation
- Id = kn.(Vgs-Vt)Vds →linear f(Vds) 
-1.2.3 Resistive region conclusion
-We need to find out that what is the impact of drain current and this thing can be only done through SPICE simulation. Also, it will answer the question that How do we calculate Id for different values of ‘Vgs’ and at every value of Vgs, sweep Vds till (Vgs – Vt) using linear equation for Id?
-1.2.4 Saturation region
-Now we will see that what happens if the Vgs – Vt voltage exceeds it and how it enters Saturation region.
+
+I<sub>d</sub> = kn * [0.0275 - 0.00125]
+
+Since, the last term is similar to 0
+
+∴ Id=kn * 0.0275 → Linear or resistive region of operation
+
+I<sub>d</sub> = kn.(V<sub>gs</sub>-V<sub>t</sub>)V<sub>ds</sub> → linear f(V<sub>ds</sub>) 
  
-In the above table and diagram, we can see that once the Vgs – Vds voltage crosses the threshold voltage it goes to saturation region and hence there is no channel. This region is also called Pinch off region – no channel near drain.
+### **_1.2.3 Resistive region conclusion_**
+
+We need to find out that what is the impact of drain current and this thing can be only done through SPICE simulation. Also, it will answer the question that How do we calculate I<sub>d</sub> for different values of ‘V<sub>gs</sub>’ and at every value of V<sub>gs</sub>, sweep V<sub>ds</sub> till (V<sub>gs</sub> – V<sub>t</sub>) using linear equation for Id?
+
+### **_1.2.4 Saturation region_**
+
+Now we will see that what happens if the V<sub>gs</sub> – V<sub>t</sub> voltage exceeds it and how it enters Saturation region.
+
+![image](https://user-images.githubusercontent.com/84899907/139436798-4c70deff-4e23-4fdb-9e8f-d5100e9d1a38.png)
+
+In the above table and diagram, we can see that once the V<sub>gs</sub> – V<sub>ds</sub> voltage crosses the threshold voltage it goes to saturation region and hence there is no channel. This region is also called Pinch off region – no channel near drain.
+
 Its condition is as follows:
-                                              Vgs – Vds ≤ Vt
-1.2.5 Drain current in the saturation region
-Voltage over the channel remains constant = Vgs – Vt
-By replacing Vds by Vgs – Vt in drain current equation
+
+   V<sub>gs</sub> – V<sub>ds</sub> ≤ V<sub>t</sub>
+					      
+### **_1.2.5 Drain current in the saturation region_**
+
+Voltage over the channel remains constant = V<sub>gs</sub> – V<sub>t</sub>
+
+By replacing V<sub>ds</sub> by V<sub>gs</sub> – V<sub>t</sub> in drain current equation
+
 we get,
-Id = kn/2.(Vgs-Vt)^2→no more linear f(Vds) 
-∴Id =(kn^')/2.(W⁄L).(Vgs-Vt)^2
-Effective conduction channel length is modulated by applied Vds. Hence if Vds increases, Depletion region at drain increases and Effective channel length decreases. Which brings us to the most accurate equation i.e., constant current equation for saturation region for MOS. The equation is as follows: 
-∴Id =(kn^')/2.(W⁄L).(Vgs-Vt)^2 [1+λ Vds]
-Where, λ = channel length modulation.
-1.3.0 SPICE simulation
-This time we will learn about how we can setup SPICE simulation so that we can get the accurate result and will also get to know the delay time. 
+
+I<sub>d</sub> = kn/2.(V<sub>gs</sub>-V<sub>t</sub>)<sup>2</sup> → no more linear f(V<sub>ds</sub>)
+
+∴ I<sub>d</sub> = (kn')/2 * (W⁄L) * (V<sub>gs</sub>-V<sub>t</sub>)<sup>2</sup>
+
+Effective conduction channel length is modulated by applied Vds. Hence if Vds increases, Depletion region at drain increases and Effective channel length decreases. Which brings us to the most accurate equation i.e., constant current equation for saturation region for MOS. 
+
+The equation is as follows: 
+
+![image](https://user-images.githubusercontent.com/84899907/139438188-45963fc8-281f-48e6-ac8f-d0c6431376f1.png)
+
+Where, 
+
+λ = channel length modulation.
+
+### **_1.3.0 SPICE simulation_**
+
+This time we will learn about how we can setup SPICE simulation so that we can get the accurate result and will also get to know the delay time.
+
+![image](https://user-images.githubusercontent.com/84899907/139437096-f0b571c6-f797-457b-87dc-fee93b1e2049.png)
                                                              
 Introduction was given regarding how to use SPICE netlist and what is the syntax for it.
  
- 
-SPICE netlist for NMOS
+![image](https://user-images.githubusercontent.com/84899907/139437449-818083a9-1aae-4112-8786-21537fb070d2.png)
 
-1.3.1 SPICE syntax
- 
-1.3.2 Technology file and commands
+### **_1.3.1 SPICE syntax_**
+
+![image](https://user-images.githubusercontent.com/84899907/139437562-3d15abf6-cfe7-4107-a4a3-4aafaea3be3c.png)
+
+### **_1.3.2 Technology file and commands_**
+
 Under this topic we saw that how to use or define the technology files and how it can help us to simulate.
 
+### **_1.3.3 and 1.3.4 First simulation in SPICE and sky130 models_**
 
 
-                     
+> * ## Lab work
+     
+![image](https://user-images.githubusercontent.com/84899907/139438761-e526d986-1174-4c62-be36-66c725a8ca08.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139438938-9a675810-c859-4020-9dad-16cbf663d715.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139438995-7b25d911-2495-4ab0-9568-31df7cc6044a.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139439067-d488420b-60bb-4135-98ad-e2a1cc355ecd.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139439140-d31b901f-015f-487b-8d8a-04024458705c.png)
+
+> * ## OUTPUT 
+
+![image](https://user-images.githubusercontent.com/84899907/139439313-018566a4-96cc-48e7-8217-d657f3437ae8.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139439348-ec627f74-4072-46ba-b464-9d886bd57f47.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
