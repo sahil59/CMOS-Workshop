@@ -244,21 +244,18 @@ Under this topic we saw that how to use or define the technology files and how i
 
 ![image](https://user-images.githubusercontent.com/84899907/139439348-ec627f74-4072-46ba-b464-9d886bd57f47.png)
 
+## DAY 2
 
+### **_2.1.0 Simulation for lower nodes_**
 
+![image](https://user-images.githubusercontent.com/84899907/139474776-e3f765ec-fd8e-4319-92be-26820c1df27c.png)
 
+### **_2.1.1 Drain current vs gate voltage_** 
 
+![image](https://user-images.githubusercontent.com/84899907/139477052-4b04f975-807c-4ac4-ba0c-2ee907bcbe92.png)
 
+For lower values of electric field velocity tends to be in linear electric field and after cut off velocity saturates or enters saturation region.
 
+![image](https://user-images.githubusercontent.com/84899907/139477112-fed84f9e-8f68-43f5-9394-1eb6bd7da6cb.png)
 
-
-
-
-
-
-
-
-
-
-
-
+Trends at the lower field is followed as velocity tends to be a linear function but at the higher fields, velocity becomes constant because of scattering effects.
