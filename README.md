@@ -31,86 +31,112 @@ Where,
    D is drain\
    B is body
 
-NMOS is a 4 terminal (gate, source, drain and body) device which consists of p-substrate having an isolation region made up of SiO2 (Silicon dioxide) which helps to keep the two transistors independent from each other if they are kept close to each other. It also has n+ diffusion region where we have a space between them to place gate oxide over which Poly-si or metal gate is placed.
+NMOS is a 4 terminal (gate, source, drain and body) device which consists of p-substrate having an isolation region made up of SiO<sub>2</sub> (Silicon dioxide) which helps to keep the two transistors independent from each other if they are kept close to each other. It also has n<sup>+</sup> diffusion region where we have a space between them to place gate oxide over which Poly-si or metal gate is placed.
 
-Also, in the same video we learnt about the threshold voltage (Vt). 
-Then we took a case where voltage across the gate and source is 0 i.e., Vgs = 0. Where drain source and body are connected to the ground. Here we have two junctions; substrate-source (B-S) and substrate-drain (B-D) in the form of p-n junction diode. Both are off since no voltage is applied. S-D resistance is high because they are grounded. If we apply Vgs voltage to gate positive charges move towards the p-substrate leaving behind the negative charges.
+Also, in the same video we learnt about the threshold voltage (V<sub>t</sub>). 
+Then we took a case where voltage across the gate and source is 0 i.e., V<sub>gs</sub> = 0. Where drain source and body are connected to the ground. Here we have two junctions; substrate-source (B-S) and substrate-drain (B-D) in the form of p-n junction diode. Both are off since no voltage is applied. S-D resistance is high because they are grounded. If we apply V<sub>gs</sub> voltage to gate positive charges move towards the p-substrate leaving behind the negative charges.
 
 ### **_1.1.2 Continuation of the threshold voltage_**
 
-   So, if we increase the gate voltage, depletion layer increases causing a phenomenon called Strong inversion where the semi-conductor surface inverts to n – type material. The Vgs voltage at which strong inversion occurs is called Threshold Voltage (Vt). And with the further increase of gate voltage, it will start attracting the heavily dopped area of negative charges from the source terminal side or the drain side. There will be no change in the depletion layer width since it has already been depleted but there will be increase in the channel width.
+   So, if we increase the gate voltage, depletion layer increases causing a phenomenon called Strong inversion where the semi-conductor surface inverts to n – type material. The V<sub>gs</sub> voltage at which strong inversion occurs is called Threshold Voltage (V<sub>t</sub>). And with the further increase of gate voltage, it will start attracting the heavily dopped area of negative charges from the source terminal side or the drain side. There will be no change in the depletion layer width since it has already been depleted but there will be increase in the channel width.
 
 
 
 
-Now if we take two scenarios in the above condition <br  />
-Case 1: When Vsb = 0 <br  />
-No more depletion takes place.<br  />
+Now if we take two scenarios in the above condition:-
+
+Case 1: When V<sub>sb</sub> = 0 <br  />
+        No more depletion takes place.<br  />
 
 
-Case 2: When Vsb = positive value<br  />
-Additional depletion occurs between the source and abstract.<br  />
+Case 2: When V<sub>sb</sub> = positive value<br  />
+        Additional depletion occurs between the source and abstract.<br  />
 
 ### **_1.1.3 Continuation of the two scenarios_**
 
-In second case due to positive voltage few charges from the channel are pulled towards the source terminal. Due to this still there is no inversion observed but in the first case still there is depletion as semi-conductor surface inverts to n-type material at voltage Vgs = Vto. Semi-conductor surface in second case inverts to n-type material at voltage Vgs = Vto + V1.
+In second case due to positive voltage few charges from the channel are pulled towards the source terminal. Due to this still there is no inversion observed but in the first case still there is depletion as semi-conductor surface inverts to n-type material at voltage V<sub>gs</sub> = V<sub>to</sub>. Semi-conductor surface in second case inverts to n-type material at voltage V<sub>gs</sub> = V<sub>to</sub> + V<sub>1</sub>.
 
-From the above cases we can conclude that in the presence of substrate bias Vsb, additional potential is required for strong inversion.
+From the above cases we can conclude that in the presence of substrate bias V<sub>sb</sub>, additional potential is required for strong inversion.
 
-Threshold voltage Equation: 
+#### Threshold voltage Equation: 
 
 ![image](https://user-images.githubusercontent.com/84899907/139279729-59f7643e-e33d-4b4b-90c2-165a832ce510.png)
 
 Where, 
 
-Vto = Threshold voltage at Vsb = 0 which is a function of manufacturing process<br  />
+V<sub>to</sub> = Threshold voltage at V<sub>sb</sub> = 0 which is a function of manufacturing process<br  />
 γ = Body effect coefficient, expresses the impact of changes in the body bis Vsb (unit is V<sup> 0.5</sup>)<br  />
 ϕ<sub>f</sub> = Fermi potential 
 
-Body effect formula: 
-γ=  √(2qNAε_Si )/C_OX 
-Where, ε_si = Relative permittivity of silicon = 11.7
-             NA = doping concentration
-                  q = charge of the electron
-              COX = Oxide capacitance
+#### Body effect formula:
 
-ϕ_f=-ϕ_T  ln⁡(N_A/n_i )
-                   n_i = intrinsic doping parameter for the substrate
-1.2.0 Resistive operation
+![image](https://user-images.githubusercontent.com/84899907/139380157-eac55b31-5f15-4f43-ae1f-d36257fb0130.png)
+ 
+Where, <br />
+
+ε<sub>si</sub> = Relative permittivity of silicon = 11.7<br />
+ N<sub>A</sub> = doping concentration<br />
+             q = charge of the electron<br />
+C<sub>OX</sub> = Oxide capacitance
+
+![image](https://user-images.githubusercontent.com/84899907/139380376-e8c3d4eb-9acb-4ebd-a350-55278cb070f4.png)
+
+where,<br />
+n<sub>i</sub> = intrinsic doping parameter for the substrate
+
+### **_1.2.0 Resistive operation_**
+
 There are three mods of operation:
+
 1. Cut off region of operation
 2. Linear region or Resistive operation
 3. Saturation region of operation
-Here we learnt about the resistive operation which is also known as linear region. Since Vgs = Vt, let’s assume that what will happen ai different voltage Vgs > Vt. Hence it will induce the charge Qi which is directly proportional to Vgs- Vt. If we analyze at Vgs = 1V, small Vds = 0.05V and Vt = 0.45V, the following graph will be formed as shown in image given below. Due to which V(x) is introduced which is the voltage at point ‘x’ along the channel Vgs -V(x) is the gate to channel voltage at that point.
+
+Here we learnt about the resistive operation which is also known as linear region. Since V<sub>gs</sub> = V<sub>t</sub>, let’s assume that what will happen ai different voltage V<sub>gs</sub> > V<sub>t</sub>. Hence it will induce the charge Q<sub>i</sub> which is directly proportional to V<sub>gs</sub> - V<sub>t</sub>. If we analyze at V<sub>gs</sub> = 1V, small V<sub>ds</sub> = 0.05V and V<sub>t</sub> = 0.45V, the following graph will be formed as shown in image given below. Due to which V(x) is introduced which is the voltage at point ‘x’ along the channel V<sub>gs</sub> - V(x) is the gate to channel voltage at that point.
+
+![image](https://user-images.githubusercontent.com/84899907/139392116-a3159e70-c2a3-46de-aa85-fd10683a3960.png)
  
-1.2.1 First order analysis, drift current
-First order analysis:
-Q_i (x)∝ -([V_gs-V(x)]-V_t)
-i.e. 
-Q_i (x)= C_OX  -([V_gs-V(x)]-V_t)
-Where, Cox = Gate oxide capacitance
-                     C_(OX )=  (ε_0 x)/(t_0 x)
-Where, ε_0 x = Oxide permittivity = 3.5 * 10e-11 f/m
-             t_0 x = Oxide thickness
-Now from the device we have two types of current 
-	Drift current which is the current due to potential difference
-Id = (velocity of the charge carriers X available charge) over channel width
-	Diffusion current which is current due to difference in the carrier concentration
+### **_1.2.1 First order analysis, drift current_**
+
+#### First order analysis:
+
+![image](https://user-images.githubusercontent.com/84899907/139392232-60b66990-a615-4acc-aae5-7dafe43e03d2.png)
+
+Where, C<sub>ox</sub> = Gate oxide capacitance
+
+![image](https://user-images.githubusercontent.com/84899907/139393105-26db1d3f-a4bd-4fef-a181-5eb5c1b0098d.png)
+                     
+Where, 
+
+ε<sub>0</sub>x = Oxide permittivity = 3.5 * 10e-11 f/m<br/>
+             t<sub>0</sub>x = Oxide thickness
+     
+Now from the device we have two types of current:
+
+1. Drift current which is the current due to potential difference<br/>
+
+> I<sub>d</sub> = velocity of the charge carriers * available charge * over channel width
+	
+2. Diffusion current which is current due to difference in the carrier concentration
+
+![image](https://user-images.githubusercontent.com/84899907/139393744-49ba737f-6ef4-422c-b111-40cc4cacc502.png)
 
 
+### **_1.2.2 Drain current derivation_**
 
+I<sub>d</sub> = velocity of the charge carriers * available charge * over channel width<br/>
+ = -V<sub>n</sub>(x) * Q<sub>i</sub>(x) * W
+ 
+By substituting the value of V<sub>n</sub> and Q<sub>i</sub> in the above equation,
 
-1.2.2 Drain current derivation
+velocity of charge carrier (V<sub>n</sub>) = Mobility * electric field = μn * ⅆv∕ⅆx
 
-Id = (velocity of the charge carriers * available charge) over channel width
-    = -Vn(x)*Qi(x)*W
-By substituting the value of Vn and Qi in the above equation,
- velocity of charge carrier (Vn) = Mobility*electric field = μn*ⅆv∕ⅆx
- Q_i (x)= C_OX  -([V_gs-V(x)]-V_t)
+![image](https://user-images.githubusercontent.com/84899907/139410982-ff8fa2be-6987-4b23-aad2-0f8fdc58136a.png)
 
 We get,
-Id = μn*ⅆv⁄ⅆx * [C_OX  -([V_gs-V(x)]-V_t)]*W
-Id *dx = μn*dv * [C_OX  -([V_gs-V(x)]-V_t)]*W
+
+Id = μn* ⅆv⁄ⅆx * [C_OX  -([V_gs-V(x)]-V_t)]*W
+Id * dx = μn * dv * [C<sub>OX</sub>-([V_gs-V(x)]-V_t)]*W
 Integrating over the length ‘L’ on LHS and over drain-source voltage Vds on RHS, we get the below equation:
 
 Id = μn.C_OX.(W⁄L)[(Vgs-Vt)Vds-〖Vds〗^2/2]
