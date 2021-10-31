@@ -393,9 +393,9 @@ V<sub>in</sub> and V<sub>out</sub> are common to PMOS and NMOS. Graphically we w
 
 ### **_3.1.0 SPICE deck for COMS_**
 
-•	Component connectivity
-•	Component values
-•	Identify ‘nodes’
+•	Component connectivity<br/>
+•	Component values<br/>
+•	Identify ‘nodes’<br/>
 •	Name ‘nodes’
 
 ### **_3.1.1 SPICE simulation for CMOS_**
@@ -525,7 +525,7 @@ Actual i/o characteristic of a inverter with finite slope
 
 ![image](https://user-images.githubusercontent.com/84899907/139585069-63b83ff6-9496-42e2-8eb6-826ebd2f3148.png)
 
-5.1.1 Advantages and disadvantages using low supply voltage 
+### **_5.1.1 Advantages and disadvantages using low supply voltage_** 
  
  Advantages of using 0.5V supply
  
