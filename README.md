@@ -344,8 +344,6 @@ When V<sub>in</sub> = 0
 
 Direct Path exists between V<sub>dd</sub> and V<sub>out</sub>, resulting in V<sub>out</sub> = V<sub>dd</sub>
 
-![image](https://user-images.githubusercontent.com/84899907/139583051-b0a19a1c-2082-4b7c-a823-4a440222d5e7.png)
-
 ![image](https://user-images.githubusercontent.com/84899907/139583056-b682262c-bed0-44d9-b4bd-603246a15bb0.png)
 
 ### **_2.2.2 PMOS and NMOS drain current drain voltage_**
@@ -406,8 +404,6 @@ V<sub>in</sub> and V<sub>out</sub> are common to PMOS and NMOS. Graphically we w
  
  ![image](https://user-images.githubusercontent.com/84899907/139584245-b2251455-721f-4b7b-ac97-3ba9e94cf7e4.png)
 
-![image](https://user-images.githubusercontent.com/84899907/139584259-f4a8f096-117f-414e-b4ff-c5872240b0ba.png)
-
 ### **_3.1.2 SPICE simulation for CMOS_**
  
  > * ## LAB Work
@@ -466,8 +462,6 @@ Alternatively, the required ratio of POMS v/s NMOS transistor size can be derive
  
  ![image](https://user-images.githubusercontent.com/84899907/139584664-e5513df9-76f6-4781-95bb-950f16df67e2.png)
 
-![image](https://user-images.githubusercontent.com/84899907/139584677-0e11b17a-41c0-404a-a424-8fac83204c76.png)
-
 ### **_3.2.5 Applications of CMOS inverter in clock network and STA_**
 
 ![image](https://user-images.githubusercontent.com/84899907/139584735-1ca974a8-f74c-418a-9c99-58de4d34464a.png)
@@ -493,8 +487,6 @@ Actual i/o characteristic of a inverter with finite slope
  ![image](https://user-images.githubusercontent.com/84899907/139584889-784d196d-350f-4446-b526-5e5f465365f8.png)
 
 ### **_4.1.2 Noise margin equation and summary_**
- 
- ![image](https://user-images.githubusercontent.com/84899907/139584911-2d6f6beb-abf2-44bf-b953-1abbfb6ffcc6.png)
 
 ![image](https://user-images.githubusercontent.com/84899907/139584918-81df9ed2-84d9-47ed-b8b3-22f439ce8b9a.png)
 
@@ -526,8 +518,6 @@ Actual i/o characteristic of a inverter with finite slope
 ### **_5.1.0 Smart SPICE simulation for power supply variations_**
  
  ![image](https://user-images.githubusercontent.com/84899907/139585061-f60444aa-3c77-4c91-9137-8906f9bd5a46.png)
-
-![image](https://user-images.githubusercontent.com/84899907/139585069-63b83ff6-9496-42e2-8eb6-826ebd2f3148.png)
 
 ### **_5.1.1 Advantages and disadvantages using low supply voltage_** 
  
@@ -561,10 +551,6 @@ Disadvantages
 
 ![image](https://user-images.githubusercontent.com/84899907/139585238-b2d528ab-d02d-4a1d-a4ee-a6df2f0efb30.png)
 
-![image](https://user-images.githubusercontent.com/84899907/139585241-2935cee3-98d3-4951-bd96-4d2fccce8791.png)
-
-![image](https://user-images.githubusercontent.com/84899907/139585247-b1e50183-8816-4261-a772-d76bafef2d0b.png)
-
 ![image](https://user-images.githubusercontent.com/84899907/139585248-d66d4bb0-4abb-4292-99d4-d098d075d67e.png)
 
 ### **_5.2.1 Sources of variation and oxide thickness_**
@@ -579,16 +565,9 @@ Disadvantages
 
 ![image](https://user-images.githubusercontent.com/84899907/139585314-e21fe826-8979-4b88-82fc-273bd180ac64.png)
 
- 
- ![image](https://user-images.githubusercontent.com/84899907/139585324-f7c3440b-e47a-48a0-b574-c578b068ab91.png)
-
 ### **_5.2.3 Conclusion_**
- 
 
 ![image](https://user-images.githubusercontent.com/84899907/139585334-d7b7869a-dee5-46ac-9b55-22051801cf16.png)
-
-![image](https://user-images.githubusercontent.com/84899907/139585398-37d320f7-463e-4736-9082-f616d71d783d.png)
-
  
 ### **_5.2.4 Device Variation Labs_**
  
