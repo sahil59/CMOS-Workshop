@@ -254,8 +254,348 @@ Under this topic we saw that how to use or define the technology files and how i
 
 ![image](https://user-images.githubusercontent.com/84899907/139477052-4b04f975-807c-4ac4-ba0c-2ee907bcbe92.png)
 
+### **_2.1.2 velocity saturation at higher and lower electric field_**
+
 For lower values of electric field velocity tends to be in linear electric field and after cut off velocity saturates or enters saturation region.
 
 ![image](https://user-images.githubusercontent.com/84899907/139477112-fed84f9e-8f68-43f5-9394-1eb6bd7da6cb.png)
 
 Trends at the lower field is followed as velocity tends to be a linear function but at the higher fields, velocity becomes constant because of scattering effects.
+
+### Observation 1: 
+
+![image](https://user-images.githubusercontent.com/84899907/139582047-1f3d7921-f916-4198-8b32-71b01c66b7e1.png)
+
+Re-deriving drain current using below boundary condition we get,
+
+![image](https://user-images.githubusercontent.com/84899907/139582069-3ccfe739-5377-4b9b-a991-cca7757cb675.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139583463-59868abf-8e9d-4c50-9553-08f9b1680755.png)
+
+
+### **_2.1.3 Velocity saturation_**
+
+V<sub>dsat</sub> is a technology parameter which is called as saturation voltage i.e., voltage at which device velocity saturates and is independent of V<sub>gs</sub> or V<sub>ds</sub>
+
+If we take some conditions
+
+* If Vgt = minimum vale
+
+![image](https://user-images.githubusercontent.com/84899907/139582263-a84f7830-a84c-4b45-9798-55862477371f.png)
+
+* If  Vds = minimum value 
+
+![image](https://user-images.githubusercontent.com/84899907/139582308-b7096bbd-0383-48c0-82e0-463bec5c2176.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139582330-6d979eb9-6dd9-4106-8201-8dcc2749064d.png)
+
+### Observation 2:
+
+![image](https://user-images.githubusercontent.com/84899907/139582363-b5bd704c-f529-4711-a16c-bc9b18fa6868.png)
+
+### **_2.1.4 Id - Vgs_**
+
+> * ## LAB Work
+
+![image](https://user-images.githubusercontent.com/84899907/139582433-16359d82-5d9e-4508-89f3-3e9e24c677e3.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139582467-d9f7d1f8-1a43-448c-b394-d6d6ff0ae391.png)
+
+> * ## OUTPUT
+
+![image](https://user-images.githubusercontent.com/84899907/139582486-775525ae-9055-43a3-a849-54d4fb82a981.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139582525-8fa49f51-2c9f-4667-8ee0-4311a10b8899.png)
+
+### **_2.1.5 Vt_**
+
+> * ## LAB Work
+
+![image](https://user-images.githubusercontent.com/84899907/139582672-927d9700-e5e8-4fb8-8eb3-3d582aca2fd8.png)
+
+> * ## OUTPUT
+
+![image](https://user-images.githubusercontent.com/84899907/139582724-b1cec448-2eee-42e4-82ce-76fd4e0718eb.png)
+
+### **_2.2.0 CMOS - transfer Characteristics (VTC)_**
+
+![image](https://user-images.githubusercontent.com/84899907/139582938-a02e186f-ecc6-4442-bc37-a7264ff5a7b1.png)
+
+Transistor → Switch
+
+* With infinite OFF resistance when |V<sub>gs</sub>| < |V<sub>t</sub>|
+* With infinite ON resistance when |V<sub>gs</sub>| > |V<sub>t</sub>|
+
+![image](https://user-images.githubusercontent.com/84899907/139582947-52805c93-b745-4518-9930-439b6226a700.png)
+
+### **_2.2.1 MOS voltage current_**
+
+![image](https://user-images.githubusercontent.com/84899907/139582972-44543c31-f41a-4c99-99ea-ba86cdc3d1fb.png)
+
+Where V<sub>in</sub> = V<sub>dd</sub>
+
+Direct path exists between V<sub>out</sub> and V<sub>s</sub>, resulting in V<sub>out</sub> = 0
+
+When V<sub>in</sub> = 0
+
+Direct Path exists between V<sub>dd</sub> and V<sub>out</sub>, resulting in V<sub>out</sub> = V<sub>dd</sub>
+
+![image](https://user-images.githubusercontent.com/84899907/139583051-b0a19a1c-2082-4b7c-a823-4a440222d5e7.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139583056-b682262c-bed0-44d9-b4bd-603246a15bb0.png)
+
+### **_2.2.2 PMOS and NMOS drain current drain voltage_**
+	
+By observations: 
+
+V<sub>gsn</sub> = V<sub>in</sub> – V<sub>ss</sub> = V<sub>in</sub>
+V<sub>dsn</sub> = V<sub>out</sub>
+
+V<sub>gsp</sub> = V<sub>in</sub> -V<sub>dd</sub>
+V<sub>dsp</sub> = V<sub>out</sub> – V<sub>dd</sub>
+
+![image](https://user-images.githubusercontent.com/84899907/139583677-ace2f4dc-5bb9-44e0-a0c3-d1d34cd5f064.png)
+
+
+By observation: 
+	
+I<sub>dsp</sub> = -I<sub>dsn</sub>
+
+![image](https://user-images.githubusercontent.com/84899907/139583187-1b67f8bb-0575-4b45-9b2e-6d648626dd3a.png)
+	
+### **_2.2.3 Convert PMOS gate-source-voltage to V<sub>in</sub>_**
+
+Steps to convert the given terms in the terms of V<sub>in</sub> and V<sub>out</sub>.
+
+Step 1:
+	
+![image](https://user-images.githubusercontent.com/84899907/139583278-9b033b96-a8b0-457a-ab5d-2bce8720f36b.png)
+ 
+### **_2.2.4 Convert PMOS and NMOS drain-source-voltage to v<sub>out</sub>_**
+
+Step 2:
+	
+ ![image](https://user-images.githubusercontent.com/84899907/139583306-cdb32313-ada6-4b35-8598-4a3a13beb27c.png)
+
+Step 3:
+ 
+![image](https://user-images.githubusercontent.com/84899907/139583317-4cb2f552-c47e-4793-b005-67e505202283.png)
+
+### **_2.2.5 Merge PMOS and NMOS load curves and plot VTC_**
+
+Step 4:
+
+V<sub>in</sub> and V<sub>out</sub> are common to PMOS and NMOS. Graphically we will pick up V<sub>in</sub> points from the intersection of corresponding load lines.
+ 
+ ![image](https://user-images.githubusercontent.com/84899907/139584221-45013779-6041-4a49-80dd-ea80d144dadd.png)
+
+## DAY 3 
+
+### **_3.1.0 SPICE deck for COMS_**
+
+•	Component connectivity
+•	Component values
+•	Identify ‘nodes’
+•	Name ‘nodes’
+
+### **_3.1.1 SPICE simulation for CMOS_**
+ 
+ ![image](https://user-images.githubusercontent.com/84899907/139584245-b2251455-721f-4b7b-ac97-3ba9e94cf7e4.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139584259-f4a8f096-117f-414e-b4ff-c5872240b0ba.png)
+
+### **_3.1.2 SPICE simulation for CMOS_**
+ 
+ > * ## LAB Work
+ 
+ ![image](https://user-images.githubusercontent.com/84899907/139584278-a37c7974-39d1-475b-b1d4-bd4c8d1a1a58.png)
+
+ ![image](https://user-images.githubusercontent.com/84899907/139584280-0eb1dcca-cdb1-4a42-82e1-0ec54fc54426.png)
+
+ > * ## OUTPUT
+ 
+ ![image](https://user-images.githubusercontent.com/84899907/139584299-186cb206-4ff0-401a-b733-81ae10c78997.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139584309-5df0ae20-cf63-49f0-8ddc-df19ea07f399.png)
+
+> * ## LAB Work
+
+![image](https://user-images.githubusercontent.com/84899907/139584328-17a839e3-9f59-431c-9791-bf316aa11e3e.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139584337-4d8caec8-3f6a-468d-89ee-13f3787f9f71.png)
+
+> * ## OUTPUT
+
+![image](https://user-images.githubusercontent.com/84899907/139584349-1299325e-86c5-4788-b1f3-5f4222a606fc.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139584369-fb761b9b-b074-42d1-804b-adbd58ea1dff.png)
+
+### **_3.2.0 Switching Threshold, V<sub>m</sub>_**
+
+![image](https://user-images.githubusercontent.com/84899907/139584404-34a5ebc1-9b2d-4bfa-81b6-f3e7d6c2d7ff.png)
+ 
+### **_3.2.1 Analytical expression of Vm as a function of (W/L)p and (W/L)n_**
+
+![image](https://user-images.githubusercontent.com/84899907/139584422-d0945cf6-661c-46d6-a887-1e8b68eba8c6.png)
+  
+  ![image](https://user-images.githubusercontent.com/84899907/139584442-12ca339b-d956-497a-8992-e7cf36705179.png)
+
+Solving the above equation for V<sub>m</sub>
+ 
+ ![image](https://user-images.githubusercontent.com/84899907/139584464-2d6b6588-bfcc-4868-abc3-56b3c8d45431.png)
+
+### **_3.2.2 Analytical expression of (W/L)p and (W/L)n as a function of V<sub>m</sub>_**
+
+Alternatively, the required ratio of POMS v/s NMOS transistor size can be derived such that V<sub>m</sub> is set
+
+![image](https://user-images.githubusercontent.com/84899907/139584599-b3cc7b1a-231c-4ff9-b6b5-da9c91742658.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139584626-d94dbd3f-aa97-45a7-b49f-0cfcf304c155.png)
+
+### **_3.2.3 Static and dynamic simulation of CMOS inverter_**
+ 
+![image](https://user-images.githubusercontent.com/84899907/139584640-d9ba3084-dc72-43c0-b12c-c94998878c39.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139584648-ac6962d2-fc61-4f13-8796-5d16f05b43e7.png)
+
+### **_3.2.4 Static and dynamic simulation of CMOS inverter with increased PMOS width_**
+ 
+ ![image](https://user-images.githubusercontent.com/84899907/139584664-e5513df9-76f6-4781-95bb-950f16df67e2.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139584677-0e11b17a-41c0-404a-a424-8fac83204c76.png)
+
+### **_3.2.5 Applications of CMOS inverter in clock network and STA_**
+
+![image](https://user-images.githubusercontent.com/84899907/139584735-1ca974a8-f74c-418a-9c99-58de4d34464a.png)
+ 
+ Approximately equal rise-fall delay. Typical characteristics for a clock inverter/buffer
+ 
+ ![image](https://user-images.githubusercontent.com/84899907/139584746-05ac9280-8572-4b49-8390-de6026bd85da.png)
+ 
+ ![image](https://user-images.githubusercontent.com/84899907/139584757-0a08d0f4-f774-4bb3-8f90-f1fe0c702e51.png)
+
+## DAY 4
+
+### **_4.1.0 Introduction to noise margin_**
+
+What is noise margin ?
+
+![image](https://user-images.githubusercontent.com/84899907/139584860-20285908-07fc-4d20-aada-f131fd47c7fb.png)
+
+Actual i/o characteristic of a inverter with finite slope 
+
+### **_4.1.1 Noise margin voltage parameters_**
+ 
+ ![image](https://user-images.githubusercontent.com/84899907/139584889-784d196d-350f-4446-b526-5e5f465365f8.png)
+
+### **_4.1.2 Noise margin equation and summary_**
+ 
+ ![image](https://user-images.githubusercontent.com/84899907/139584911-2d6f6beb-abf2-44bf-b953-1abbfb6ffcc6.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139584918-81df9ed2-84d9-47ed-b8b3-22f439ce8b9a.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139584924-d28fbd3b-e905-471d-a0d9-1418db168785.png)
+
+### **_4.1.3 Noise margin variation with respect to PMOS width_**
+ 
+ ![image](https://user-images.githubusercontent.com/84899907/139584947-6ddff6a3-f202-4214-8136-9e8ecd6634d4.png)
+
+### **_4.1.4 Noise margin labs_**
+ 
+ > * ## LAB Work
+ 
+ ![image](https://user-images.githubusercontent.com/84899907/139584989-f7f5d136-8c28-4e6b-b381-dc7454b5df38.png)
+
+ ![image](https://user-images.githubusercontent.com/84899907/139584995-08d61bfd-b214-4109-ab55-040b7a9ebef3.png)
+
+> * ## OUTPUT 
+
+![image](https://user-images.githubusercontent.com/84899907/139585021-994a8511-0f6f-4b02-a766-97734b24116a.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139585025-e9500090-56b6-4d97-be50-80419f756aa2.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139585044-ce19829b-b2da-4771-80be-9363e89aa06e.png)
+
+
+## DAY 5
+
+### **_5.1.0 Smart SPICE simulation for power supply variations_**
+ 
+ ![image](https://user-images.githubusercontent.com/84899907/139585061-f60444aa-3c77-4c91-9137-8906f9bd5a46.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139585069-63b83ff6-9496-42e2-8eb6-826ebd2f3148.png)
+
+5.1.1 Advantages and disadvantages using low supply voltage 
+ 
+ Advantages of using 0.5V supply
+ 
+ 1. Increase in gain (close to 50% improvement)
+ 2. Significant reduction in engergy (close to 90% improvement)
+
+Disadvantages
+
+1. Performance impact
+
+
+### **_5.1.2 Supply Variation Labs_**
+
+> * ## LAB Work
+
+![image](https://user-images.githubusercontent.com/84899907/139585183-3fa2940e-dbae-46d7-a99f-4106c039bcf9.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139585188-630633a5-464d-4255-9171-72edf5447893.png)
+
+> * ## OUTPUT
+
+![image](https://user-images.githubusercontent.com/84899907/139585201-90b12530-7d75-4dbd-9e1d-6a2a2f67c492.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139585209-971a8f65-18f4-47ab-b64d-8df5a1ee2ff8.png)
+
+### **_5.2.0 Sources of variation and Etching process_**
+ 
+![image](https://user-images.githubusercontent.com/84899907/139585233-8b0d58e2-3c68-4601-870c-2a4795ebf88e.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139585238-b2d528ab-d02d-4a1d-a4ee-a6df2f0efb30.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139585241-2935cee3-98d3-4951-bd96-4d2fccce8791.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139585247-b1e50183-8816-4261-a772-d76bafef2d0b.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139585248-d66d4bb0-4abb-4292-99d4-d098d075d67e.png)
+
+### **_5.2.1 Sources of variation and oxide thickness_**
+ 
+![image](https://user-images.githubusercontent.com/84899907/139585265-cdf5f3e5-625f-4d70-a4ae-38861289c797.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139585272-dc039b17-5fbe-41b2-b0d6-07fb5b708968.png)
+
+### **_5.2.2 Smart SPICE simulation for device variations_**
+ 
+ ![image](https://user-images.githubusercontent.com/84899907/139585308-bd20a099-9624-480a-8381-075f1b130c09.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139585314-e21fe826-8979-4b88-82fc-273bd180ac64.png)
+
+ 
+ ![image](https://user-images.githubusercontent.com/84899907/139585324-f7c3440b-e47a-48a0-b574-c578b068ab91.png)
+
+### **_5.2.3 Conclusion_**
+ 
+
+![image](https://user-images.githubusercontent.com/84899907/139585334-d7b7869a-dee5-46ac-9b55-22051801cf16.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139585398-37d320f7-463e-4736-9082-f616d71d783d.png)
+
+ 
+### **_5.2.4 Device Variation Labs_**
+ 
+ > * ## LAB Work
+
+![image](https://user-images.githubusercontent.com/84899907/139585432-ac1131fd-4cf3-40ae-abca-0fc245845635.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139585442-0af4cbf8-fa65-4a51-a17e-f7594569b3b5.png)
+
+> * ## OUTPUT
+
+![image](https://user-images.githubusercontent.com/84899907/139585480-1dd10d5c-fd75-46ad-b2c1-4c66351b9bf0.png)
+
+![image](https://user-images.githubusercontent.com/84899907/139585486-7de7d9bf-09d2-4654-acd4-179d17a91ac6.png)
