@@ -468,8 +468,6 @@ Alternatively, the required ratio of POMS v/s NMOS transistor size can be derive
  
  Approximately equal rise-fall delay. Typical characteristics for a clock inverter/buffer
  
- ![image](https://user-images.githubusercontent.com/84899907/139584746-05ac9280-8572-4b49-8390-de6026bd85da.png)
- 
  ![image](https://user-images.githubusercontent.com/84899907/139584757-0a08d0f4-f774-4bb3-8f90-f1fe0c702e51.png)
 
 ## DAY 4
