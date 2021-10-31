@@ -8,7 +8,7 @@
 Day one we got to know about the basic meaning of the words “Circuit design” and “SPICE simulation” how to interpret or analyze the graph to get the knowledge about the specific components delay time. Also, some questions were answered like: 
         
 * Why do we need SPICE?
-* How we can draw delay table with the help of delay table?
+* How we can draw delay table with the help of simulation?
 * Where does the delay of a cell comes from?
 * Are the models accurate?
 * How do we verify, if what we are doing in static timing analysis are right or not?
@@ -599,3 +599,15 @@ Disadvantages
 ![image](https://user-images.githubusercontent.com/84899907/139585480-1dd10d5c-fd75-46ad-b2c1-4c66351b9bf0.png)
 
 ![image](https://user-images.githubusercontent.com/84899907/139585486-7de7d9bf-09d2-4654-acd4-179d17a91ac6.png)
+
+## Conclusion
+
+This workshop gave a brief idea about the ground level of the MOSFET and CMOS and how does it work, what are their characteristics and how does it work. I also got to know about the SPICE simulations lab and I also learnt how to analyse the graph and take output from it. ALL Thanks Kunal sir and his team.
+
+## References
+
+https://vsdiat.com/enrolledCourses
+
+https://github.com/kunalg123/sky130CircuitDesignWorkshop
+
+https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md
