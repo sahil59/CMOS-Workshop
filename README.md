@@ -583,7 +583,7 @@ Disadvantages
 
 ## Conclusion
 
-This workshop gave a brief idea about the ground level of the MOSFET and CMOS and how does it work, what are their characteristics and how does it work. I also got to know about the SPICE simulations lab and I also learnt how to analyse the graph and take output from it. ALL Thanks Kunal sir and his team.
+This workshop gave a brief idea about the ground level of the MOSFET and CMOS and how does it work, what are their characteristics and how does it work. I also got to know about the SPICE simulations lab and I also learnt how to analyse the graph and take output from it. All Thanks to Kunal sir and his team.
 
 ## References
 
